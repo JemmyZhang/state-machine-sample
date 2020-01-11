@@ -2,10 +2,10 @@ language: java
 jdk:
   - openjdk8
 before_install:
-  - "Sample: Before install."
+  - "echo Sample: Before install."
 install:
-  - "Sample: Install."
+  - "echo Sample: Install."
 script:
   - mvn clean package -DskipTests=true
 after_success:
-  - "Sample: After success"
+  - "echo Sample: After success"
