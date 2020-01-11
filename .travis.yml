@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - openjdk8
+cache:
+  directories:
+    -$HOME/.m2
+before_install:
+  - "Sample: Before install."
+install:
+  - "Sample: Install."
+script:
+  - mvn clean package -DskipTests=true
+after_success:
+  - "Sample: After success"
